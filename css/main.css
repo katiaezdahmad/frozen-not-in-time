@@ -1,0 +1,165 @@
+html {
+  font-family: "Fredoka One", sans-serif;
+}
+
+h1 {
+  color: #990073;
+  transform: rotate(-8deg);
+  position: absolute;
+  top: -2.3em;
+}
+
+p, a {
+  color: #c09;
+}
+
+p {
+  max-width: 19em;
+  transform: rotate(-5deg);
+  position: absolute;
+  top: -1.8em;
+}
+
+.btn-ghost {
+  border-width: 3px;
+  border-color: #990073;
+  color: #c09;
+}
+
+.btn-ghost:hover {
+  background-color: #c09;
+  border-color: #990073;
+  opacity: 1;
+  color: #c09;
+}
+
+.background {
+  background-image: repeating-linear-gradient(-36deg, #c9fcff, #d4fdff 18px);
+  border-top: solid 8px #b3fbff;
+  border-bottom: solid 8px #b3fbff;
+}
+
+h1, p, a {
+  text-shadow: 1px 1px 1px gray;
+}
+
+.ice-cream {
+  width: 180px;
+}
+
+.ice-cream-cone {
+  position: relative;
+  min-height: 480px;
+}
+
+.cherry {
+  top: -2em;
+  position: absolute;
+  z-index: 10000;
+  animation: cherry 1s forwards;
+}
+
+.cone {
+  position: absolute;
+  bottom: -.5em;
+  animation: cone 1s forwards;
+}
+
+.mint-chip {
+  bottom: 5em;
+  position: absolute;
+  animation: mint-chip 1s forwards;
+}
+
+.chocolate-chip {
+  top: 6em;
+  right: 1em;
+  position: absolute;
+  z-index: 100;
+  animation: chocolate-chip 1s forwards;
+}
+
+.vanilla-fudge {
+  top: 2em;
+  position: absolute;
+  z-index: 1000;
+  animation: vanilla-fudge 1s forwards;
+}
+
+.text {
+  position: relative;
+  animation: text-appears 1s forwards;
+}
+
+a {
+  position: absolute;
+  top: 5em;
+}
+
+@keyframes cone {
+
+  0% {
+    transform: translateY(-100em);
+  }
+
+  20% {
+    transform: translateY(-.5em);
+  }
+
+}
+
+@keyframes mint-chip {
+
+  20% {
+    transform: translateY(-100em);
+  }
+
+  40% {
+    transform: translateY(-1em);
+  }
+
+}
+
+@keyframes chocolate-chip {
+
+  40% {
+    transform: translateY(-1000em);
+  }
+
+  60% {
+    transform: translateY(-1em);
+  }
+
+}
+
+@keyframes vanilla-fudge {
+
+  60% {
+    transform: translateY(-100em);
+  }
+
+  80% {
+    transform: translateY(-1em);
+  }
+
+}
+
+@keyframes cherry {
+
+  80% {
+    transform: translateY(-1000em);
+  }
+
+  100% {
+    transform: translateY(-.5em);
+  }
+
+}
+
+@keyframes text-appears {
+
+  0% {
+    filter: blur(15px);
+  }
+
+}
